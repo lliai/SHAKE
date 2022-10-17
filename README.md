@@ -17,6 +17,12 @@ This repo is partly based on the following repos, thank the authors a lot.
 If you find that this project helps your research, please consider citing some of the following papers:
 
 ```
+@inproceedings{li2022shake,
+  author    = {Lujun Li and Jin Zhe},
+  title     = {Shadow Knowledge Distillation: Bridging Offline and Online Knowledge Transfer},
+  booktitle = {Thirty-sixth Conference on Neural Information Processing Systems (NeurIPS)},
+  year      = {2022}
+}
 
 ```
 
