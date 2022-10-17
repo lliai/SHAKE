@@ -4,7 +4,9 @@ This project provides Pytorch implementation for Shadow Knowledge Distillation: 
 
 **Open source code and training logs are under preparation, please keep patience, thanks!**
 
+![shake-poster](E:\github\SHAKE\poster\shake-poster.jpg)
 
+**Training logs and models**: https://pan.baidu.com/s/1hXe6iTCFw8nD_heDpCh1ag  (shak) 
 
 ## Acknowledgements
 This repo is partly based on the following repos, thank the authors a lot.
