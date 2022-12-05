@@ -122,9 +122,9 @@ def train_distill(epoch, train_loader, module_list, criterion_list, optimizer, o
             feat_t = [f.detach() for f in feat_t]
 
         pred_feat_s = module_list[1](feat_t[1:-1], weight.detach(), bias.detach())
-        logit_s = F.layer_norm(logit_s, torch.Size((100,)), None, None, 1e-7) *  3
-        logit_t = F.layer_norm(logit_t, torch.Size((100,)), None, None, 1e-7) *  3
-        pred_feat_s = F.layer_norm(pred_feat_s, torch.Size((100,)), None, None, 1e-7) *  3
+        logit_s = F.layer_norm(logit_s, torch.Size((100,)), None, None, 1e-7) *  3.1415
+        logit_t = F.layer_norm(logit_t, torch.Size((100,)), None, None, 1e-7) *  3.1415
+        pred_feat_s = F.layer_norm(pred_feat_s, torch.Size((100,)), None, None, 1e-7) *  3.1415
         # cls + kl div
         loss_cls = criterion_cls(logit_s, target)
         loss_div = criterion_div(logit_s, logit_t)
@@ -248,7 +248,7 @@ def validate(val_loader, model, criterion, opt):
 
             # compute output
             output = model(input)
-            output = F.layer_norm(output, torch.Size((100,)), None, None, 1e-7) *  3
+            output = F.layer_norm(output, torch.Size((100,)), None, None, 1e-7) *  3.1415
 
             # measure accuracy and record loss
             acc1, acc5 = accuracy(output, target, topk=(1, 5))
