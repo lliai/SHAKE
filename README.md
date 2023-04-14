@@ -1,10 +1,11 @@
 # Shadow Knowledge Distillation
+![shake-poster](./poster/SHAKE_log.png)
 
 This project provides Pytorch implementation for Shadow Knowledge Distillation: Bridging Offline and Online Knowledge Transfer.
 
 **Open source code and training logs are under preparation, please keep patience, thanks!**
 
-![shake-poster](./poster/shake-poster.jpg)
+![shake-poster](./poster/shake.jpg)
 
 **Training logs and models**: https://pan.baidu.com/s/1hXe6iTCFw8nD_heDpCh1ag  (shak) 
 
